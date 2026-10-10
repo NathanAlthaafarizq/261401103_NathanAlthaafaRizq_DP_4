@@ -51,6 +51,7 @@ begin
         writeln;
     end;
 
+
     writeln('=== REKAPITULASI ===');
     writeln('Total mahasiswa LULUS       : ', lulus);
     writeln('Total mahasiswa TIDAK LULUS : ', tidakLulus);

@@ -36,6 +36,7 @@ begin
         writeln('Anda Mendapatkan Diskon 20%');
         end;
 
+
     writeln('=== RINCIAN BELANJA ANDA ===');
     writeln('Total Belanja: '      , n);
     writeln('Total Sebelum Diskon:', total:0:2);
