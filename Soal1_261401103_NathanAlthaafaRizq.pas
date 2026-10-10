@@ -1,8 +1,8 @@
 Program Soal1;
 uses crt;
 var 
-    i, n : integer;
-    x, total : real;
+    i, n, persen : integer;
+    x, total, totalsemua : real;
 
 begin
     clrscr;
@@ -19,21 +19,28 @@ begin
     end;
     if total < 100000 then
         begin
-        total := total;
+        persen := 0;
+        totalsemua := total;
         writeln('Anda Tidak Mendapatkan Diskon');
         end
     else if total < 500000 then
         begin
-        total := total - (total * 0.1);
+        persen := 10;
+        totalsemua := total - (total * persen / 100);
         writeln('Anda Mendapatkan Diskon 10%');
         end
     else
         begin
-        total := total - (total * 0.2);
+        persen := 20;
+        totalsemua := total - (total * persen / 100);
         writeln('Anda Mendapatkan Diskon 20%');
         end;
 
-    writeln('Total Belanja Akhir: ', total:0:2);
+    writeln('=== RINCIAN BELANJA ANDA ===');
+    writeln('Total Belanja: '      , n);
+    writeln('Total Sebelum Diskon:', total:0:2);
+    writeln('Besar Diskon:'        , persen, '%');
+    writeln('Total Belanja Akhir: ', totalsemua:0:2);
 end.
 
 
